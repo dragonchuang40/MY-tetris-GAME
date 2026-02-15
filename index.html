@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲首頁</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #001a4d 0%, #003d99 50%, #0052cc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3.5em;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
+            letter-spacing: 2px;
+        }
+
+        .buttons-wrapper {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .game-btn {
+            padding: 20px 40px;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 30px rgba(0, 150, 255, 0.5);
+            background: linear-gradient(135deg, #0066ff, #00d4ff);
+            position: relative;
+        }
+
+        .game-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 50px rgba(0, 150, 255, 0.8), 
+                        0 0 80px rgba(0, 200, 255, 0.6);
+        }
+
+        .game-btn:active {
+            transform: scale(0.95);
+        }
+
+        .game-btn.btn-2048 {
+            background: linear-gradient(135deg, #ff006e, #ff4da6);
+            box-shadow: 0 0 30px rgba(255, 0, 110, 0.5);
+        }
+
+        .game-btn.btn-2048:hover {
+            box-shadow: 0 0 50px rgba(255, 0, 110, 0.8), 
+                        0 0 80px rgba(255, 77, 166, 0.6);
+        }
+
+        .game-btn.btn-tetris {
+            background: linear-gradient(135deg, #00ff00, #00cc44);
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
+        }
+
+        .game-btn.btn-tetris:hover {
+            box-shadow: 0 0 50px rgba(0, 255, 0, 0.8), 
+                        0 0 80px rgba(0, 204, 68, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ 遊戲中心 ✨</h1>
+        <div class="buttons-wrapper">
+            <a href="index.html" class="game-btn btn-2048">經典 2048</a>
+            <a href="TETEIS.HTML" class="game-btn btn-tetris">霓虹俄羅斯方塊</a>
+        </div>
+    </div>
+</body>
+</html>
